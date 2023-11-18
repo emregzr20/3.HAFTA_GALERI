@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARABA GALERISI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .myNew {
+            background-color: #537878;
+            padding: 80px 0;
+
+
+        }
+       
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <section class="myNew">
+
+
+        <div class="container min-vh-100">
+            <div class="row">
+                <h1 id="text-center">ARABALAR</h1>
+              
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="CARS_1.PNG" class="card-img-top" alt="arb-1" data-bs-toggle="modal" data-bs-target="#resimDetay">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="CARS_2.PNG" class="card-img-top" alt="arb-2" data-bs-toggle="modal" data-bs-target="#resimDetay">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="CARS_3.PNG" class="card-img-top" alt="arb-3" data-bs-toggle="modal" data-bs-target="#resimDetay">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="CARS_4.PNG" class="card-img-top" alt="arb-4" data-bs-toggle="modal" data-bs-target="#resimDetay">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src="CARS_5.PNG" class="card-img-top" alt="arb-5" data-bs-toggle="modal" data-bs-target="#resimDetay">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-43">
+                    <div class="card">
+                        <img src="CARS_6.PNG" class="card-img-top" alt="arb-6" data-bs-toggle="modal" data-bs-target="#resimDetay">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+    <div class="modal fade" id="resimDetay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img id="modal-image" src="" class="card-img-top" alt="Manzara">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".card img").forEach(el => {
+            el.addEventListener('click', () => {
+                let src = el.getAttribute("src");
+
+                let modalImage = document.getElementById("modal-image");
+                modalImage.setAttribute("src", src);
+            });
+        });
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
